@@ -5,7 +5,8 @@ export const siteConfig = {
   tagline: "Jasa Landing Page UMKM",
   description:
     "Jasa pembuatan landing page untuk UMKM mulai Rp500 ribu, sudah termasuk domain. Desain sesuai brand usaha Anda, rapi di HP, dan terhubung langsung ke WhatsApp. Dikerjakan langsung oleh saya, tanpa perantara.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  // Diisi saat build di next.config.ts (env manual → `URL` dari Netlify → localhost)
+  url: process.env.SITE_URL ?? "http://localhost:3000",
   email: "dimasbp.tech@gmail.com",
   whatsapp: {
     number: "6282146202762", // format internasional tanpa "+"
